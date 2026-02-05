@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
 # Update this with your test website URL
-BASE_URL = "https://your-bank-test-site.com"
+BASE_URL = "https://parabank.parasoft.com/parabank/index.htm"
 
 
 def get_driver(headless=False):
