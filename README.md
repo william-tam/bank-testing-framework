@@ -70,15 +70,11 @@ docker run --rm bank-tests
 
 ### CI/CD with GitHub Actions
 
-Tests automatically run on:
-- Every push to main branch
-- Every pull request
-
-View results in the "Actions" tab of your GitHub repository.
+View results in the Actions tab of your GitHub repository.
 
 ## Writing Tests
 
-Tests use the Page Object Model pattern. Here's a simple example:
+Tests use the Page Object Model pattern:
 
 ```python
 def test_login_page_loads(driver):
@@ -102,16 +98,16 @@ def test_login_page_loads(driver):
 
 ## Troubleshooting
 
-**ChromeDriver issues?**
-- The framework uses webdriver-manager to auto-download drivers
+**ChromeDriver issues**
 - Make sure Chrome browser is installed
+- The framework uses webdriver-manager to auto-download drivers
 
-**Tests failing in Docker?**
+**Tests failing in Docker**
 - Docker uses headless mode by default
 - Check logs with `docker run --rm bank-tests`
 
 ## Resources
 
-- [Selenium Documentation](https://www.selenium.dev/documentation/)
-- [Pytest Documentation](https://docs.pytest.org/)
-- [Page Object Model Pattern](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/)
+- (https://www.selenium.dev/documentation/)
+- (https://docs.pytest.org/)
+- (https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/)
